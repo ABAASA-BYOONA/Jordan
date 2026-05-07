@@ -1,0 +1,382 @@
+/* 1. VARIABLES & RESET */
+:root {
+    --primary: #FF9933;
+    --dark: #333333;
+    --light: #ffffff;
+    --grey: #f4f4f4;
+    --text-muted: #666666;
+    --nav-height: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    background-color: var(--light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-circle {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    background-color: #FF9933; /* Your brand orange */
+    border-radius: 50%; /* Makes it a perfect circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(10,0.5,0.5,0.5);
+}
+
+.logo-text {
+    color: #333333; /* Your brand dark grey */
+    font-family: 'Merriweather Sans', sans-serif; /* Your heading font */
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+/* Hover effect to make it feel interactive */
+.logo-circle:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 2. NAVIGATION BAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--nav-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    background: transparent;
+   /* background: rgba(255, 255, 255, 0.98);*/
+    box-shadow: 0 10px 10px rgba(0.5,0.5,0.5,0.5);
+    z-index: 10000;
+    border-radius: 10%;
+}
+
+.logo {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--dark);
+}
+
+.about-img {
+    display: flow-root;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* 3. MOBILE MENU TOGGLE (Hidden on Desktop) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.menu-toggle .bar {
+    width: 20px;
+    height: 3px;
+    background-color: var(--dark);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+/* 4. HERO SECTION */
+.hero {
+    padding-top: var(--nav-height);
+    background: var(--grey);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.hero .subtitle {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+
+.featured-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.featured-item {
+    background: #c7700e;
+    width: 100px;
+    height: 60px;
+    align-content: center;
+    border-radius: 4px;
+    box-shadow: 0 10px 10px rgba(-10,-10,0.5,0.5);
+
+}
+
+.featured-item .badge {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: bolder;
+position: relative;
+
+}
+
+
+
+.bio-intro {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+/* 5. PROJECTS GRID */
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--grey);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-bottom: 4px solid transparent;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-bottom: 4px solid var(--primary);
+}
+
+.img-container {
+    width: 100%;
+    height: 200px;
+    background: #ccc;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+/* 6. ABOUT & CONTACT */
+.about-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.skills span {
+    background: var(--dark);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+
+.contact-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-channels {
+    flex: 1;
+}
+
+.channel-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: var(--grey);
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--dark);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.channel-bar:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.contact-form {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.contact-form button {
+    padding: 15px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0.5,0.5,0.5,0.5);
+}
+
+/* 7. RESPONSIVE DESIGN (MOBILE) */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Mobile Side Menu */
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: var(--nav-height);
+        flex-direction: column;
+        background: #fff;
+        width: 100%;
+        height: calc(100vh - var(--nav-height));
+        text-align: center;
+        transition: 0.4s;
+        padding-top: 50px;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    }
+
+    .nav-links.active {
+        right: 0;
+        width: 40%;
+        max-height: 50%;
+        box-shadow: 0 10px 10px rgba(0.5,0.5,0.5,0.5);
+    }
+
+    /* THE TWO PROJECTS PER ROW RULE */
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .img-container {
+        height: 150px;
+    }
+
+    .card-info h3 {
+        font-size: 0.85rem;
+    }
+
+    /* Hamburger Animation */
+    .menu-toggle.is-active .bar:nth-child(2) { opacity: 0; }
+    .menu-toggle.is-active .bar:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+    .menu-toggle.is-active .bar:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+}
+
+/* 8. SCROLL ANIMATIONS */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s all ease;
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
