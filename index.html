@@ -3,215 +3,396 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Walakira Jordan | Portfolio</title>
-    
+
     <link rel="icon" type="image/png" href="assets/images/owner.jpeg">
+
     <meta property="og:image" content="assets/images/owner.jpeg">
     <meta property="og:title" content="Walakira Jordan | Graphic Designer Portfolio">
     <meta property="og:description" content="Explore professional visual design, branding, and multimedia projects by Walakira Jordan.">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- NAVBAR -->
     <nav class="navbar">
-    <div class="logo-container">
-    <div class="logo-circle">
-        <span class="logo-text">WJ</span>
-    </div>
-</div>
-    
-    <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
 
-    <ul class="nav-links">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#projects">WORK</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-    </ul>
-</nav>
-
-    <header id="home" class="hero section">
-        <div class="hero-content scroll-reveal">
-            <h1>WALAKIRA JORDAN</h1>
-            <p class="subtitle">GRAPHIC DESIGNER</p>
-            
-            <div class="featured-grid">
-                <div class="featured-item"><span class="badge">BRANDING</span></div>
-                <div class="featured-item"><span class="badge">IDENTITY</span></div>
-                <div class="featured-item"><span class="badge">PACKAGING</span></div>
+        <div class="logo-container">
+            <div class="logo-circle">
+                <span class="logo-text">WJ</span>
             </div>
-            
-            <p class="bio-intro">I am a graphic designer passionate about creating visually compelling and meaningful designs. Through intentional layout, striking typography, and structural identity, I translate complex brand stories into unforgettable visual experiences.</p>
         </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#projects">WORK</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="hero section">
+
+        <div class="hero-content scroll-reveal">
+
+            <h1>WALAKIRA JORDAN</h1>
+
+            <p class="subtitle">GRAPHIC DESIGNER</p>
+
+            <div class="featured-grid">
+
+                <div class="featured-item">
+                    <span class="badge">BRANDING</span>
+                </div>
+
+                <div class="featured-item">
+                    <span class="badge">IDENTITY</span>
+                </div>
+
+                <div class="featured-item">
+                    <span class="badge">PACKAGING</span>
+                </div>
+
+            </div>
+
+            <p class="bio-intro">
+                I am a graphic designer passionate about creating visually compelling
+                and meaningful designs. Through intentional layout, striking typography,
+                and structural identity, I translate complex brand stories into
+                unforgettable visual experiences.
+            </p>
+
+        </div>
+
     </header>
 
+    <!-- PROJECTS -->
     <section id="projects" class="section">
+
         <div class="container scroll-reveal">
+
             <h2 class="section-title">PROJECTS</h2>
-            <p class="section-subtitle">Tap any project card to view or download the complete case study PDF.</p>
-            
+
+            <p class="section-subtitle">
+                Tap any project card to view or download the complete case study PDF.
+            </p>
+
             <div class="project-grid">
+
+                <!-- CARD 1 -->
                 <div class="project-card" onclick="openProject('kiira.pdf')">
+
                     <div class="img-container">
-                        <img src="assets/images/kiira.png" alt="KIIRA Project" onerror="this.src='https://placehold.co/600x400?text=KIIRA'">
+                        <img src="assets/images/kiira.png"
+                        alt="KIIRA Project"
+                        onerror="this.src='https://placehold.co/600x400?text=KIIRA'">
                     </div>
+
                     <div class="card-info">
                         <h3>1. KIIRA</h3>
                         <p>Visual Identity & Concepts</p>
                     </div>
+
                 </div>
+
+                <!-- CARD 2 -->
                 <div class="project-card" onclick="openProject('caes.pdf')">
+
                     <div class="img-container">
-                        <img src="assets/images/caes.png" alt="CAES LOGO" onerror="this.src='https://placehold.co/600x400?text=CAES+LOGO'">
+                        <img src="assets/images/caes.png"
+                        alt="CAES LOGO"
+                        onerror="this.src='https://placehold.co/600x400?text=CAES+LOGO'">
                     </div>
+
                     <div class="card-info">
                         <h3>2. CAES LOGO</h3>
                         <p>Corporate Branding & Insignia</p>
                     </div>
+
                 </div>
+
+                <!-- CARD 3 -->
                 <div class="project-card" onclick="openProject('phine.pdf')">
+
                     <div class="img-container">
-                        <img src="assets/images/phine.png" alt="PHINE EXPORTERS" onerror="this.src='https://placehold.co/600x400?text=PHINE+EXPORTERS'">
+                        <img src="assets/images/phine.png"
+                        alt="PHINE EXPORTERS"
+                        onerror="this.src='https://placehold.co/600x400?text=PHINE+EXPORTERS'">
                     </div>
+
                     <div class="card-info">
                         <h3>3. PHINE EXPORTERS</h3>
                         <p>Packaging & Export Brand Asset Design</p>
                     </div>
+
                 </div>
+
+                <!-- CARD 4 -->
                 <div class="project-card" onclick="openProject('art.pdf')">
+
                     <div class="img-container">
-                        <img src="assets/images/art.png" alt="ART STICKER" onerror="this.src='https://placehold.co/600x400?text=ART+STICKER'">
+                        <img src="assets/images/art.png"
+                        alt="ART STICKER"
+                        onerror="this.src='https://placehold.co/600x400?text=ART+STICKER'">
                     </div>
+
                     <div class="card-info">
                         <h3>4. ART STICKER</h3>
                         <p>Illustrative Graphic & Custom Prints</p>
                     </div>
+
                 </div>
+
+                <!-- CARD 5 -->
                 <div class="project-card" onclick="openProject('safety.pdf')">
+
                     <div class="img-container">
-                        <img src="assets/images/safety.png" alt="SAFETY CLUB" onerror="this.src='https://placehold.co/600x400?text=SAFETY+CLUB'">
+                        <img src="assets/images/safety.png"
+                        alt="SAFETY CLUB"
+                        onerror="this.src='https://placehold.co/600x400?text=SAFETY+CLUB'">
                     </div>
+
                     <div class="card-info">
                         <h3>5. SAFETY CLUB</h3>
                         <p>Awareness Campaigns & Poster Design</p>
                     </div>
+
                 </div>
+
+                <!-- CARD 6 -->
                 <div class="project-card" onclick="openProject('scripture.pdf')">
+
                     <div class="img-container">
-                        <img src="assets/images/scriptures.png" alt="SCRIPTURES STICKER" onerror="this.src='https://placehold.co/600x400?text=SCRIPTURES+STICKER'">
+                        <img src="assets/images/scriptures.png"
+                        alt="SCRIPTURES STICKER"
+                        onerror="this.src='https://placehold.co/600x400?text=SCRIPTURES+STICKER'">
                     </div>
+
                     <div class="card-info">
                         <h3>6. SCRIPTURES STICKER</h3>
                         <p>Typography & Minimalist Decal Production</p>
                     </div>
+
                 </div>
+
+                <!-- CARD 7 -->
                 <div class="project-card" onclick="openProject('food.pdf')">
+
                     <div class="img-container">
-                        <img src="assets/images/food.png" alt="FOOD WEBSITE" onerror="this.src='https://placehold.co/600x400?text=FOOD+WEBSITE'">
+                        <img src="assets/images/food.png"
+                        alt="FOOD WEBSITE"
+                        onerror="this.src='https://placehold.co/600x400?text=FOOD+WEBSITE'">
                     </div>
+
                     <div class="card-info">
                         <h3>7. FOOD WEBSITE</h3>
                         <p>Digital Interface Design & UI Mockup</p>
                     </div>
+
                 </div>
+
+                <!-- CARD 8 -->
                 <div class="project-card" onclick="openProject('honey.pdf')">
+
                     <div class="img-container">
-                        <img src="assets/images/honey.png" alt="HONEY BRAND" onerror="this.src='https://placehold.co/600x400?text=HONEY+BRAND'">
+                        <img src="assets/images/honey.png"
+                        alt="HONEY BRAND"
+                        onerror="this.src='https://placehold.co/600x400?text=HONEY+BRAND'">
                     </div>
+
                     <div class="card-info">
                         <h3>8. HONEY BRAND</h3>
                         <p>Label Design & Sustainable Material Branding</p>
                     </div>
+
                 </div>
+
+                <!-- CARD 9 -->
                 <div class="project-card" onclick="openProject('essay.pdf')">
+
                     <div class="img-container">
-                        <img src="assets/images/essay.png" alt="PHOTO ESSAY" onerror="this.src='https://placehold.co/600x400?text=PHOTO+ESSAY'">
+                        <img src="assets/images/essay.png"
+                        alt="PHOTO ESSAY"
+                        onerror="this.src='https://placehold.co/600x400?text=PHOTO+ESSAY'">
                     </div>
+
                     <div class="card-info">
                         <h3>9. PHOTO ESSAY</h3>
                         <p>Editorial Formatting & Storytelling Visuals</p>
                     </div>
+
                 </div>
+
+                <!-- CARD 10 -->
                 <div class="project-card" onclick="openProject('jameson.pdf')">
+
                     <div class="img-container">
-                        <img src="assets/images/jameson.png" alt="JAMESON" onerror="this.src='https://placehold.co/600x400?text=JAMESON'">
+                        <img src="assets/images/jameson.png"
+                        alt="JAMESON"
+                        onerror="this.src='https://placehold.co/600x400?text=JAMESON'">
                     </div>
+
                     <div class="card-info">
                         <h3>10. JAMESON</h3>
                         <p>Commercial Concept & Event Visual Design</p>
                     </div>
+
                 </div>
+
+                <!-- CARD 11 -->
                 <div class="project-card" onclick="openProject('signpost.pdf')">
+
                     <div class="img-container">
-                        <img src="assets/images/signpost.png" alt="SIGNPOST" onerror="this.src='https://placehold.co/600x400?text=SIGNPOST'">
+                        <img src="assets/images/signpost.png"
+                        alt="SIGNPOST"
+                        onerror="this.src='https://placehold.co/600x400?text=SIGNPOST'">
                     </div>
+
                     <div class="card-info">
                         <h3>11. SIGNPOST</h3>
                         <p>Outdoor Signage & Environmental Graphics</p>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="section">
+
         <div class="about-container container scroll-reveal">
+
             <div class="about-img">
-                <img src="assets/images/owner.jpeg" alt="Walakira Jordan" onerror="this.src='https://placehold.co/400x400?text=Jordan'">
+
+                <img src="assets/images/owner.jpeg"
+                alt="Walakira Jordan"
+                onerror="this.src='https://placehold.co/400x400?text=Jordan'">
+
             </div>
+
             <div class="about-text">
+
                 <h2>ABOUT ME</h2>
-                <p>Hello, I am Walakira Jordan. I specialized in bridging creative artistic concepts with real-world functional production. I combine strategic brand identity work with a hands-on approach to digital media.</p>
-                <p>Whether navigating complex layout typography, crafting pristine digital interface components, or designing physical products for output, I push every concept to its highest creative potential.</p>
-                
+
+                <p>
+                    Hello, I am Walakira Jordan. I specialize in bridging
+                    creative artistic concepts with real-world functional
+                    production.
+                </p>
+
+                <p>
+                    I combine strategic brand identity work with a hands-on
+                    approach to digital media and visual storytelling.
+                </p>
+
                 <h3 class="skills-title">SKILLS</h3>
+
                 <div class="skills">
                     <span>Graphic Designer</span>
                     <span>Photographer</span>
                     <span>3D Printing</span>
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section">
+
         <div class="container scroll-reveal">
-            <h2>CONTACT</h2>
-            <p class="section-subtitle">Let's collaborate on your next design project. Get in touch directly.</p>
-            
+
+            <h2 class="section-title">CONTACT</h2>
+
+            <p class="section-subtitle">
+                Let's collaborate on your next design project.
+            </p>
+
             <div class="contact-wrapper">
+
                 <div class="contact-channels">
-                    <a href="mailto:walakirajordan@gmail.com" class="channel-bar">
+
+                    <a href="mailto:walakirajordan@gmail.com"
+                    class="channel-bar">
+
                         <i class="fa-solid fa-envelope"></i>
                         <span>walakirajordan@gmail.com</span>
+
                     </a>
-                    <a href="https://wa.me/256709987428" target="_blank" class="channel-bar">
+
+                    <a href="https://wa.me/256709987428"
+                    target="_blank"
+                    class="channel-bar">
+
                         <i class="fa-brands fa-whatsapp"></i>
                         <span>Chat on WhatsApp</span>
+
                     </a>
-                    <a href="tel:+256709987428" class="channel-bar">
+
+                    <a href="tel:+256709987428"
+                    class="channel-bar">
+
                         <i class="fa-solid fa-phone"></i>
                         <span>+256 709 987428</span>
+
                     </a>
+
                 </div>
 
-                <form class="contact-form" action="https://formspree.io/f/your_form_id_here" method="POST">
-                    <input type="text" name="name" placeholder="NAME" required>
-                    <input type="email" name="email" placeholder="E-MAIL" required>
-                    <textarea name="message" placeholder="MESSAGE" rows="5" required></textarea>
-                    <button type="submit">SEND MESSAGE</button>
+                <form class="contact-form"
+                action="https://formspree.io/f/your_form_id_here"
+                method="POST">
+
+                    <input type="text"
+                    name="name"
+                    placeholder="NAME"
+                    required>
+
+                    <input type="email"
+                    name="email"
+                    placeholder="E-MAIL"
+                    required>
+
+                    <textarea name="message"
+                    placeholder="MESSAGE"
+                    rows="5"
+                    required></textarea>
+
+                    <button type="submit">
+                        SEND MESSAGE
+                    </button>
+
                 </form>
+
             </div>
+
         </div>
+
     </section>
 
     <script src="script.js"></script>
+
 </body>
 </html>
