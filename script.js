@@ -29,7 +29,7 @@ const multiProjectData = {
             { src: "assets/images/4.jpeg", alt: "Illustration Concept 4" }
         ],
         pdfs: [
-            { name: "View Brand Identity (PDF)", url: "assets/pdfs/BRAND IDENTITY.pdf" },
+            { name: "View Brand Identity (PDF)", url: "assets/pdfs/BRAND.pdf" },
             { name: "View Project Moodboard (PDF)", url: "assets/pdfs/MOODBOARD.pdf" }
         ]
     }
