@@ -40,7 +40,10 @@ printing: {
             { src: "assets/images/1.jpeg", alt: "Illustration Concept 1" },
             { src: "assets/images/2.jpeg", alt: "Illustration Concept 2" },
             { src: "assets/images/3.jpeg", alt: "Illustration Concept 3" },
-            { src: "assets/images/4.jpeg", alt: "Illustration Concept 4" }
+             { src: "assets/images/4.jpeg", alt: "Illustration Concept 4" },
+            { src: "assets/images/5.jpeg", alt: "Illustration Concept 5" },
+            { src: "assets/images/6.jpeg", alt: "Illustration Concept 6" },
+            { src: "assets/images/7.jpeg", alt: "Illustration Concept 7" }
         ],
         pdfs: [
             { name: "View Brand Identity (PDF)", url: "assets/pdfs/BRAND.pdf" },
