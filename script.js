@@ -19,6 +19,20 @@ const multiProjectData = {
             { name: "View Business Canvas (PDF)", url: "assets/pdfs/MulagoSmartGuideBussinessCanvas.pdf" }
         ]
     },
+
+printing: {
+        title: "Printing",
+        description: "Printing panel.",
+        images: [
+            // ⚠️ Double check your file extension here (.jpg vs .jpeg vs .png)
+            { src: "assets/images/panel.png", alt: "Printing project" } 
+        ],
+        pdfs: [
+            { name: "Printing Panel (PDF)", url: "assets/pdfs/PRINTING PANEL.pdf" },
+            { name: "Printing Project (PDF)", url: "assets/pdfs/printing projrct.pdf" }
+        ]
+    },
+    
     branding: {
         title: "Branding and Packaging",
         description: "Explore custom vector illustrations, conceptual moodboards, and commercial brand frameworks.",
