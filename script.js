@@ -32,6 +32,24 @@ printing: {
             { name: "Printing Project (PDF)", url: "assets/pdfs/printing projrct.pdf" }
         ]
     },
+
+    photography: {
+    title: "Photography",
+    description: "A collection of photography work captured by Walakira Jordan.",
+    images: [
+        { src: "p1.jpg", alt: "Photography 1" },
+        { src: "p2.jpg", alt: "Photography 2" },
+        { src: "p3.jpg", alt: "Photography 3" },
+        { src: "p4.jpg", alt: "Photography 4" },
+        { src: "p5.jpg", alt: "Photography 5" },
+        { src: "p6.png", alt: "Photography 6" },
+        { src: "p7.jpg", alt: "Photography 7" },
+        { src: "p8.jpg", alt: "Photography 8" },
+        { src: "p9.jpg", alt: "Photography 9" },
+        { src: "p10.jpg", alt: "Photography 10" }
+    ],
+    pdfs: []
+},
     
     branding: {
         title: "Branding and Packaging",
