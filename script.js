@@ -12,7 +12,7 @@ const multiProjectData = {
         ],
         pdfs: [
             { name: "Printing Panel (PDF)", url: "assets/pdfs/PRINTING PANEL.pdf" },
-            { name: "Printing Project (PDF)", url: "assets/pdfs/printing projrct.pdf" }
+            { name: "Printing Project (PDF)", url: "assets/pdfs/printing project.pdf" }
         ]
     },
 
