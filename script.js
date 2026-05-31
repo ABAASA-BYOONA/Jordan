@@ -70,6 +70,21 @@ printing: {
     }
 };
 
+// Inject download anchor components
+const linksContainer = document.getElementById('modalLinks');
+linksContainer.innerHTML = '';
+
+if (data.pdfs && data.pdfs.length > 0) {
+    data.pdfs.forEach(pdfAsset => {
+        const anchor = document.createElement('a');
+        anchor.href = pdfAsset.url;
+        anchor.className = 'modal-action-btn';
+        anchor.target = '_blank';
+        anchor.innerHTML = `<i class="fa-solid fa-file-pdf"></i> ${pdfAsset.name}`;
+        linksContainer.appendChild(anchor);
+    });
+}
+
 // ... keep everything else underneath in script.js exactly as it is!
 
 // Legacy single-action function for original project cards
