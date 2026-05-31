@@ -3,17 +3,6 @@
 // ==========================================
 
 const multiProjectData = {
-    marketing: {
-        title: "Professional Design and Marketing",
-        description: "Review the Mulago Smart Guide framework, operational budget design, and campaign canvas assets.",
-        images: [
-            { src: "assets/images/qr.jpeg", alt: "Project QR Code" }
-        ],
-        pdfs: [
-            { name: "View Budget Proposal (PDF)", url: "assets/pdfs/MulagoSmartGuideBudgetProposal.pdf" },
-            { name: "View Business Canvas (PDF)", url: "assets/pdfs/MulagoSmartGuideBussinessCanvas.pdf" }
-        ]
-    },
 
     printing: {
         title: "Printing",
@@ -31,18 +20,11 @@ const multiProjectData = {
         title: "Photography",
         description: "A collection of photography work captured by Walakira Jordan.",
         images: [
-            { src: "p1.jpg", alt: "Photography 1" },
-            { src: "p2.jpg", alt: "Photography 2" },
-            { src: "p3.jpg", alt: "Photography 3" },
-            { src: "p4.jpg", alt: "Photography 4" },
-            { src: "p5.jpg", alt: "Photography 5" },
-            { src: "p6.png", alt: "Photography 6" },
-            { src: "p7.jpg", alt: "Photography 7" },
-            { src: "p8.jpg", alt: "Photography 8" },
-            { src: "p9.jpg", alt: "Photography 9" },
-            { src: "p10.jpg", alt: "Photography 10" }
+            { src: "p1.jpg", alt: "Photography 1" }
         ],
-        pdfs: []
+        pdfs: [
+            {name: "Photograpgy (PDF)", url: "assets/pdfs/Photography.pdf" }
+        ]
     },
 
     branding: {
